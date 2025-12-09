@@ -15,15 +15,11 @@ The system is made of two parts:
   - Minecraft UUID
   - Timestamp (`created_at`)
 
-> ⚠️ The `/plugin` folder contains **only Java source code**.  
-> It is **not a packaged plugin**.  
-> If you want to use it, you must turn it into a proper plugin yourself.
+- ⚠️ The `/plugin` folder contains **only Java source code**.  It is **not a packaged plugin**. If you want to use it, you must turn it into a proper plugin yourself.
 
 
 ## Discord Bot
-- `/link`  
-  Sends the user an ephemeral message with a button.  
-  The button opens a modal where they enter the 6-digit code from Minecraft.
+- `/link` Sends the user an ephemeral message with a button. The button opens a modal where they enter the 6-digit code from Minecraft.
 
 - The bot checks:
   - If the code exists  
