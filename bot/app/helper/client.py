@@ -29,13 +29,5 @@ class Client(commands.AutoShardedBot):
 
     async def on_ready(self):
         await self.loop.create_task(Codes.cleanup_codes())
-
-        await self.change_presence(
-            status=discord.Status.idle, 
-            activity=discord.Activity(
-                type=discord.ActivityType.watching, 
-                name="Watching Match Results"
-            )
-        )
-
+        
         logger.info(f'Logged in as {self.user} (ID: {self.user.id})')
